@@ -8,7 +8,7 @@ cask "scribui" do
   url "https://github.com/chicreativetech/scribui/releases/download/v#{version}/ScribUI-#{version}-mac-#{arch}.dmg"
   name "ScribUI"
   desc "Visual review between you and your coding agent"
-  homepage "https://github.com/chicreativetech/scribui"
+  homepage "https://scribui.chicreativetech.se"
 
   livecheck do
     url :url
@@ -19,6 +19,8 @@ cask "scribui" do
   depends_on macos: :ventura
 
   app "ScribUI.app"
+  # the command line tool ships inside the app (0.2.15 and later)
+  binary "#{appdir}/ScribUI.app/Contents/Resources/bin/scribui"
 
   zap trash: [
     "~/Library/Application Support/ScribUI",
