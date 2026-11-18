@@ -1,9 +1,9 @@
 cask "scribui" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.2.15"
-  sha256 arm:   "902eca17d1d3490dcc0fb1ac1efff151f37449e766f339e395cc61488db85bef",
-         intel: "78d36667086c75c1930c26d60a64bfcf29bffcc42ba3677ed0619060cea60bf4"
+  version "0.2.16"
+  sha256 arm:   "ed8a71115d42367900ed5fda610d39805aeb51e89e61bbff41552903aeb0a754",
+         intel: "6795e06acbd951595843861275702e6ec3b1ff06fb05e13618cd7686286c1d75"
 
   url "https://github.com/chicreativetech/scribui/releases/download/v#{version}/ScribUI-#{version}-mac-#{arch}.dmg"
   name "ScribUI"
